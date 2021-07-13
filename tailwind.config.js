@@ -1,5 +1,5 @@
-const colors = require('tailwindcss/colors')
-const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   jit: true,
@@ -7,7 +7,7 @@ module.exports = {
     content: [
       './pages/**/*.{js,ts,jsx,tsx}',
       './components/**/*.{js,ts,jsx,tsx}',
-      './layouts/**/*.{js,ts,jsx,tsx}'
+      './layouts/**/*.{js,ts,jsx,tsx}',
     ],
     options: {
       keyframes: true,
@@ -24,7 +24,7 @@ module.exports = {
       gray: colors.trueGray,
     },
     screens: {
-      'xs': '475px',
+      xs: '475px',
       ...defaultTheme.screens,
     },
     extend: {},
@@ -32,5 +32,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [require('@tailwindcss/typography')],
+};

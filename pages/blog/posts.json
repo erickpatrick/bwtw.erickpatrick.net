@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "link": "/blog/new-year-new-layout-new-post",
+      "date": "2019-01-09",
+      "title": "New year, new layout, new post",
+      "summary": "After long time without posts, I decided for a new year resolution: new layout and weekly posts..."
+    },
+    {
+      "link": "/blog/augmenting-tightenco-jigsaw-with-netlifycms",
+      "date": "2019-01-22",
+      "title": "Augmenting TightenCo Jigsaw with NetlifyCMS",
+      "summary": "Today, I show how to integrate NetlifyCMS to Tighten Co's static site generator, Jigsaw, as it gives us a nice interface to manage static content while using the power of Git workflow (commits, branches and PRs)."
+    },
+    {
+      "link": "/blog/new-year-new-layout-new-post-2",
+      "date": "2019-01-09",
+      "title": "New year, new layout, new post",
+      "summary": "After long time without posts, I decided for a new year resolution: new layout and weekly posts..."
+    },
+    {
+      "link": "/blog/augmenting-tightenco-jigsaw-with-netlifycms-3",
+      "date": "2019-01-22",
+      "title": "Augmenting TightenCo Jigsaw with NetlifyCMS",
+      "summary": "Today, I show how to integrate NetlifyCMS to Tighten Co's static site generator, Jigsaw, as it gives us a nice interface to manage static content while using the power of Git workflow (commits, branches and PRs)."
+    }
+  ]
+}
