@@ -11,6 +11,7 @@ const HomeLayout = ({ children }: HomeLayoutParams) => {
       <Meta />
       <div className="sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto px-4 py-8 md:px-0 font-thin">
         {children}
+        <div className="clear-both"></div>
       </div>
     </>
   );

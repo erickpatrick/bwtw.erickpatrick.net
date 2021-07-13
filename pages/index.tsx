@@ -1,5 +1,6 @@
 import HomeLayout from '@/layouts/HomeLayout';
 import HomeHeader from '@/layouts/partials/HomeHeader';
+import Footer from '@/layouts/partials/Footer';
 import HomeSkills from '@/components/HomeSkills';
 import HomeTools from '@/components/HomeTools';
 import Cta from '@/components/Cta';
@@ -19,6 +20,7 @@ export default function Home() {
         buttonText="Contact me now!"
       />
       <HomeTools />
+      <Footer />
     </>
   );
 }

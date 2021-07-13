@@ -3,6 +3,7 @@ import BlogLayout from '@/layouts/BlogLayout';
 import { Post, Posts } from 'types';
 import PostSummary from '@/components/Post/Summary';
 import SectionHeader from '@/components/Section/Header';
+import Footer from '@/layouts/partials/Footer';
 
 const content: Posts = require('./posts.json');
 
@@ -36,6 +37,7 @@ export default function Blog({ description }: { description: string }) {
           </BlogLayout>
         </>
       )}
+      <Footer />
     </>
   );
 }
