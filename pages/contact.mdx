@@ -1,0 +1,17 @@
+import BlogPage from '@/components/BlogPage';
+
+export default function BlogPost({ children }) {
+  const meta = {
+    title: 'Contact',
+    description:
+      'I&#039;m a Brazilian Software Architect, living in Germany. I mainly create sites, web systems and mobile apps. Also, I&#039;m a proud husband, father and son.',
+    date: '2019-01-22T00:00:00.000Z',
+    categories: ['programming'],
+    feature: true,
+  };
+  return <BlogPage meta={meta}>{children}</BlogPage>;
+}
+
+Right now, you can contact me via [@erickpatrick (Twitter)](https://twitter.com/erickpatrick). I know it's not much and you may not even have a Twitter account, but I won't make the same mistake of adding my email here again =P
+
+However, soonish, I'll add the a form where you can contact me directly through this page, which will make things much, much easier =)

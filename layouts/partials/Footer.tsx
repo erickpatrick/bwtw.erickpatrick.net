@@ -8,9 +8,6 @@ export default function Footer() {
           <Link href="/">
             <a className="inline-block p-4 hover:underline">Home</a>
           </Link>
-          <Link href="/about">
-            <a className="inline-block p-4 hover:underline">About</a>
-          </Link>
           <Link href="/projects">
             <a className="inline-block p-4 hover:underline">Projects</a>
           </Link>
