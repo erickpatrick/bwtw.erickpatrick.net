@@ -6,7 +6,7 @@ type BlogLayoutParams = {
     title: string;
     description: string;
     date: string;
-    categories: string[];
+    categories: string[] | never | never[];
     feature: Boolean;
   };
   children: React.ReactNode;
