@@ -1,0 +1,13 @@
+import BlogPage from '@/components/BlogPage';
+
+export const meta = {
+  title: '',
+  description: '',
+  date: '',
+  categories: ['programming'],
+  feature: true,
+};
+
+export default function BlogPost({ children }) {
+  return <BlogPage meta={meta}>{children}</BlogPage>;
+}
