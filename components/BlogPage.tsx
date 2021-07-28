@@ -3,6 +3,7 @@ import Footer from '@/layouts/partials/Footer';
 import BlogLayout from '@/layouts/BlogLayout';
 import { BlogLayoutParams } from '@/layouts/BlogLayout';
 import { MDXProvider } from '@mdx-js/react';
+import Pre from '@/components/Pre';
 import Code from '@/components/Code';
 import H2 from '@/components/H2';
 import H3 from '@/components/H3';
@@ -11,6 +12,7 @@ import Ul from '@/components/Ul';
 import Li from '@/components/Li';
 import Image from '@/components/Image';
 import Link from '@/components/Link';
+import Blockquote from '@/components/Blockquote';
 
 const components = {
   img: function NextImage(props: any) {
@@ -18,13 +20,15 @@ const components = {
       <Image alt="image alt" {...props} layout="responsive" loading="lazy" />
     );
   },
-  code: Code,
   h2: H2,
   h3: H3,
   h4: H4,
   ul: Ul,
   li: Li,
   a: Link,
+  pre: Pre,
+  code: Code,
+  blockquote: Blockquote,
 };
 
 export default function BlogPage({ meta, children }: BlogLayoutParams) {
