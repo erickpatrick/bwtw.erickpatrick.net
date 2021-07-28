@@ -8,7 +8,13 @@ import Footer from '@/layouts/partials/Footer';
 const content: Posts = require('./posts.json');
 
 export default function Blog({ description }: { description: string }) {
-  const meta = { title: 'Blog', description: description };
+  const meta = {
+    title: 'Blog',
+    description: description,
+    categories: [],
+    feature: false,
+    date: null,
+  };
   return (
     <>
       <BlogHeader />
