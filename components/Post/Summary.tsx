@@ -13,7 +13,7 @@ export default function PostSummary(key: number, post: Post) {
             </Link>
           </h3>
           <div className="w-full text-xl md:text-2xl xl:text-3xl leading-normal sm:leading-normal md:leading-normal xl:leading-normal">
-            <p className="mb-8">{post.summary}</p>
+            <p className="mb-8">{post.description}</p>
           </div>
         </div>
       </Section>

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <footer className="p-4 text-xl text-center font-thin bg-black">
-        <nav className="text-white">
+        <nav className="text-white font-semibold">
           <Link href="/">
             <a className="inline-block p-4 hover:underline">Home</a>
           </Link>
@@ -21,7 +21,7 @@ export default function Footer() {
             <a className="inline-block p-4 hover:underline">Privacy</a>
           </Link>
         </nav>
-        <span className="text-gray-500">
+        <span className="text-white font-light">
           &copy; {new Date().getFullYear()}. All rights reserved.
         </span>
       </footer>
