@@ -31,13 +31,15 @@ export default function Blog({ description }: { description: string }) {
                 'Here you see a list of all publications, without filter, that I wrote to this blog. Feel free to read and mention them on Twitter.',
             }}
           >
-            {content.posts
-              .sort((a, b) => {
-                return a.date > b.date ? -1 : a.date < b.date ? 1 : 0;
-              })
-              .map((post: Post, key: number) => {
-                return PostSummary(key, post);
-              })}
+            <div className="flex flex-wrap">
+              {content.posts
+                .sort((a, b) => {
+                  return a.date > b.date ? -1 : a.date < b.date ? 1 : 0;
+                })
+                .map((post: Post, key: number) => {
+                  return PostSummary(key, post);
+                })}
+            </div>
           </BlogLayout>
         </>
       )}
