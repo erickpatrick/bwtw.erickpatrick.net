@@ -27,7 +27,13 @@ const content: SectionData[] = [
 ];
 
 export default function Projects({ description }: { description: string }) {
-  const meta = { title: 'Projects', description: description };
+  const meta = {
+    title: 'Projects',
+    description: description,
+    categories: [],
+    feature: false,
+    date: '',
+  };
   return (
     <>
       <BlogHeader />
@@ -48,6 +54,9 @@ export default function Projects({ description }: { description: string }) {
               title: 'All blog posts',
               description:
                 'Here you see a list of all publications, without filter, that I wrote to this blog. Feel free to read and mention them on Twitter.',
+              date: '',
+              feature: false,
+              categories: [],
             }}
           >
             <Sections content={content} />

@@ -13,7 +13,7 @@ export default function Blog({ description }: { description: string }) {
     description: description,
     categories: [],
     feature: false,
-    date: null,
+    date: '',
   };
   return (
     <>
@@ -35,6 +35,9 @@ export default function Blog({ description }: { description: string }) {
               title: 'All blog posts',
               description:
                 'Here you see a list of all publications, without filter, that I wrote to this blog. Feel free to read and mention them on Twitter.',
+              date: '',
+              categories: [],
+              feature: false,
             }}
           >
             <div className="flex flex-wrap">

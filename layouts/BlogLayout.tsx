@@ -5,7 +5,7 @@ type BlogLayoutParams = {
   meta: {
     title: string;
     description: string;
-    date: string | null;
+    date: string;
     categories: string[] | never | never[];
     feature: Boolean;
   };
