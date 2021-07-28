@@ -1,14 +1,15 @@
 import BlogPage from '@/components/BlogPage';
 
+export const meta = {
+  title: 'Augmenting TightenCo Jigsaw with NetlifyCMS',
+  description:
+    "Today, I show how to integrate NetlifyCMS to Tighten Co's static site generator, Jigsaw, as it gives us a nice interface to manage static content while using the power of Git workflow (commits, branches and PRs).",
+  date: '2019-01-22T00:00:00.000Z',
+  categories: ['programming'],
+  feature: true,
+};
+
 export default function BlogPost({ children }) {
-  const meta = {
-    title: 'Augmenting TightenCo Jigsaw with NetlifyCMS',
-    description:
-      "Today, I show how to integrate NetlifyCMS to Tighten Co's static site generator, Jigsaw, as it gives us a nice interface to manage static content while using the power of Git workflow (commits, branches and PRs).",
-    date: '2019-01-22T00:00:00.000Z',
-    categories: ['programming'],
-    feature: true,
-  };
   return <BlogPage meta={meta}>{children}</BlogPage>;
 }
 

@@ -1,14 +1,15 @@
 import BlogPage from '@/components/BlogPage';
 
+export const meta = {
+  title: 'Contact',
+  description:
+    'I&#039;m a Brazilian Software Architect, living in Germany. I mainly create sites, web systems and mobile apps. Also, I&#039;m a proud husband, father and son.',
+  date: '2019-01-22T00:00:00.000Z',
+  categories: ['programming'],
+  feature: true,
+};
+
 export default function BlogPost({ children }) {
-  const meta = {
-    title: 'Contact',
-    description:
-      'I&#039;m a Brazilian Software Architect, living in Germany. I mainly create sites, web systems and mobile apps. Also, I&#039;m a proud husband, father and son.',
-    date: '2019-01-22T00:00:00.000Z',
-    categories: ['programming'],
-    feature: true,
-  };
   return <BlogPage meta={meta}>{children}</BlogPage>;
 }
 

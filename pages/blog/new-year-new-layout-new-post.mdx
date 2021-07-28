@@ -1,14 +1,15 @@
 import BlogPage from '@/components/BlogPage';
 
+export const meta = {
+  title: 'New year, new layout, new post',
+  description:
+    'After long time without posts, I decided for a new year resolution: new layout and weekly posts...',
+  date: '2019-01-09T00:00:00.000Z',
+  categories: ['miscellanea', 'programming'],
+  feature: true,
+};
+
 export default function BlogPost({ children }) {
-  const meta = {
-    title: 'New year, new layout, new post',
-    description:
-      'After long time without posts, I decided for a new year resolution: new layout and weekly posts...',
-    date: '2019-01-09T00:00:00.000Z',
-    categories: ['miscellanea', 'programming'],
-    feature: true,
-  };
   return <BlogPage meta={meta}>{children}</BlogPage>;
 }
 
