@@ -36,9 +36,15 @@ export default function BlogPage({ meta, children }: BlogLayoutParams) {
     <>
       <BlogHeader />
       <div className="sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-4xl mx-auto px-4 py-8 md:px-0">
-        <h2 className="text-4xl lg:text-6xl 2xl:text-8xl mb-8 font-black">
+        <h2 className="text-4xl lg:text-6xl 2xl:text-8xl font-black">
           {meta?.title}
         </h2>
+        <p className="p-0 text-base lg:text-xl mb-8 italic">
+          {new Date(meta?.date).toDateString()}
+          {meta?.categories.length
+            ? `, in ` + meta?.categories?.join(', ')
+            : ``}
+        </p>
       </div>
       <BlogLayout meta={meta}>
         <MDXProvider components={components}>{children}</MDXProvider>
