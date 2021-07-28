@@ -2,12 +2,12 @@ import Meta from '@/components/Meta';
 
 type BlogLayoutParams = {
   size?: string;
-  meta?: {
-    title?: string;
-    description?: string;
-    date?: string;
-    categories?: Array<string>;
-    feature?: Boolean;
+  meta: {
+    title: string;
+    description: string;
+    date: string;
+    categories: string[];
+    feature: Boolean;
   };
   children: React.ReactNode;
 };
