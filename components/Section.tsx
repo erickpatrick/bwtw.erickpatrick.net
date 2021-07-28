@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-type SectionProps = {
+export type SectionProps = {
   title?: string;
   children?: ReactNode;
   className?: string;

@@ -14,7 +14,9 @@ import Link from '@/components/Link';
 
 const components = {
   img: function NextImage(props: any) {
-    return <Image {...props} layout="responsive" loading="lazy" />;
+    return (
+      <Image alt="image alt" {...props} layout="responsive" loading="lazy" />
+    );
   },
   code: Code,
   h2: H2,
