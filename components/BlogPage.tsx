@@ -40,7 +40,7 @@ export default function BlogPage({ meta, children }: BlogLayoutParams) {
           {meta?.title}
         </h2>
         <p className="p-0 text-base lg:text-xl mb-8 italic">
-          {new Date(meta?.date).toDateString()}
+          {meta.date && new Date(meta?.date).toDateString()}
           {meta?.categories.length
             ? `, in ` + meta?.categories?.join(', ')
             : ``}
