@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <>
-      <footer className="p-4 text-xl text-center font-thin bg-black">
+      <footer id="menu" className="p-4 text-xl text-center font-thin bg-black">
         <nav className="text-white font-semibold">
           <Link href="/">
             <a className="inline-block p-4 hover:underline">Home</a>
