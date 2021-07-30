@@ -4,28 +4,28 @@ import SectionHeader from './Section/Header';
 export default function HomeTools() {
   const toolsLogos = [
     {
-      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200/v1625259460/erickpatrick.net/bw-logo-php',
+      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200,q_60/v1625259460/erickpatrick.net/bw-logo-php',
       key: 'php',
     },
     {
       key: 'magento',
-      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200/v1625259459/erickpatrick.net/bw-logo-magento',
+      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200,q_60/v1625259459/erickpatrick.net/bw-logo-magento',
     },
     {
       key: 'nodejs',
-      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200/v1625259460/erickpatrick.net/bw-logo-nodejs',
+      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200,q_60/v1625259460/erickpatrick.net/bw-logo-nodejs',
     },
     {
       key: 'react',
-      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200/v1625259459/erickpatrick.net/bw-logo-react',
+      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200,q_60/v1625259459/erickpatrick.net/bw-logo-react',
     },
     {
       key: 'nextjs',
-      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200/v1625259459/erickpatrick.net/bw-logo-nextjs.jpg',
+      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200,q_60/v1625259459/erickpatrick.net/bw-logo-nextjs.jpg',
     },
     {
       key: 'sfcc',
-      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200/v1625259459/erickpatrick.net/bw-logo-sfcc',
+      logo: 'https://res.cloudinary.com/erickpatrick/image/upload/c_pad,h_200,w_200,q_60/v1625259459/erickpatrick.net/bw-logo-sfcc',
     },
   ];
 
