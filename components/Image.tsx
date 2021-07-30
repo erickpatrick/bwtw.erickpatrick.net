@@ -7,6 +7,7 @@ export default function MyImage(props: any) {
       {...props}
       width="300"
       height="300"
+      loading="lazy"
       alt={``}
     />
   );
