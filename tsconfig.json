@@ -17,9 +17,15 @@
     "paths": {
       "@/components/*": ["./components/*"],
       "@/layouts/*": ["./layouts/*"],
-      "@/content/*": ["./content/*"]
+      "@/content/*": ["./content/*"],
+      "@/lib/*": ["./lib/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "scripts/generate-blog-json.js"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "scripts/generate-blog-json.js"
+  ],
   "exclude": ["node_modules"]
 }
