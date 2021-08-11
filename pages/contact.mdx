@@ -1,4 +1,5 @@
 import BlogPage from '@/components/BlogPage';
+import Form from '@/components/Form';
 
 export const meta = {
   title: 'Contact',
@@ -13,8 +14,10 @@ export default function BlogPost({ children }) {
   return <BlogPage meta={meta}>{children}</BlogPage>;
 }
 
-First of all, thank you for your interest in contacting me. I hope we can talk with each other as soon as possible, and make business together. For the time being, you can contact me via [@erickpatrick (Twitter)](https://twitter.com/erickpatrick) or via [LinkedIn](https://www.linkedin.com/in/erickpatrick). Preferably, contact me via LinkedIn as in there I'll know it will be business related.
+First of all, thank you for your interest in contacting me. I hope we can talk with each other as soon as possible, and make business together. You can use the following form to contact me:
 
-I'm everyday on [Twitter](https://twitter.com/erickpatrick) and it's quite quick to get an answer from me in there. However, if you're really looking for a professional contact, you can preferably contact me via [LinkedIn](https://www.linkedin.com/in/erickpatrick). If you do so, the answer may take a little longer (but no longer than a day) and I'll know for sure it's a business related contact.
+<Form website="erickpatrick.net" action="/api/contact/create" />
 
-> **Note**: I'm building up a proper contact form which I'll put it only soon. Please, be patient until it's released or contact me via the above mentioned methods. Thank you.
+You can also contact me via [@erickpatrick (Twitter)](https://twitter.com/erickpatrick) or via [LinkedIn](https://www.linkedin.com/in/erickpatrick). I'm everyday on [Twitter](https://twitter.com/erickpatrick) and it's quite quick to get an answer from me in there.
+
+However, if you're really looking for a professional contact, you can preferably contact me through the form above or [LinkedIn](https://www.linkedin.com/in/erickpatrick). If you do so, the answer may take a little longer (but no longer than a day) and I'll know for sure it's a business related contact.
