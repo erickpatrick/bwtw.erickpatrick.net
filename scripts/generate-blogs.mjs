@@ -31,7 +31,7 @@ import visit from 'unist-util-visit';
 
     let meta = {};
 
-    compiler.process(finalFile, function done(err, file) {
+    compiler.process(finalFile, (_err, file) => {
       meta = file.data.frontmatter;
     });
 
