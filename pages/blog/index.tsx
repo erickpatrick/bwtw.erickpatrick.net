@@ -1,11 +1,11 @@
 import BlogHeader from '@/layouts/partials/BlogHeader';
 import BlogLayout from '@/layouts/BlogLayout';
-import { Post, Posts } from 'types';
+import { Post } from 'types';
 import PostSummary from '@/components/Post/Summary';
 import SectionHeader from '@/components/Section/Header';
 import Footer from '@/layouts/partials/Footer';
 
-const content: Posts = require('./posts.json');
+import content from './posts.json';
 
 export default function Blog({ description }: { description: string }) {
   const meta = {

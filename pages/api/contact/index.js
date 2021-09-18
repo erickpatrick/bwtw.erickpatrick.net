@@ -1,6 +1,5 @@
 // code adapted from https://github.com/vercel/next.js/blob/canary/examples/api-routes-rate-limit/pages/api/user.js
 
-import { createContactMessage } from "@/lib/fauna";
 import rateLimit from "@/lib/rateLimit";
 
 const limiter = rateLimit({
