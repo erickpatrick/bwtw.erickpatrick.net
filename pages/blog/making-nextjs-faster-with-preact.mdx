@@ -1,0 +1,53 @@
+import BlogPage from '@/components/BlogPage';
+
+export const meta = {
+  title: 'Making Next.js faster with Preact',
+  description: "A simple way to reduce your initial Next.js JavaScript payload by using Preact instead of React",
+  date: '2020-09-18T00:00:00.000Z',
+  categories: ['programming'],
+  feature: true,
+};
+
+export default function BlogPost({ children }) {
+  return <BlogPage meta={meta}>{children}</BlogPage>;
+}
+
+If you follow me on Twitter, you know that I update the layout and tech stack of this blog quite often. The latest update was about 2 months ago when I switched from a PHP static site generator (Jigsaw) to a JavaScript solution, using Next.js.
+
+Since the beginning, I've managed to migrate and keep basically the same performance and quality scores (i.e., Google Page Speed Insights) as its previous version. But I wanted more.
+
+I knew that React and Preact, most of the times, can be used intechangeably and started looking for a way to use Preact within Next.js instead of React. To my surprise, I've found this [blog post] from Darren White, explaining how he did it. He credits to yet another person, [Lee Robinson] for the solution, so here are his credits as well.
+
+## Performance gains
+
+Before, the initial JavaScript load for this own website was 70kb for the page itself + 30kb shared across all pages, nothing too different from a default Next.js page is. With the use of Preact, it went down to 44KB for the page itself + 30kb shared across all pages. 
+
+Almost 30% reduction by only shifting from React to Preact and, in my case, no changes to what I've coded apart from installing Preact itself and adjusting the `next.config.js` file to use Preact for productions builds only.
+
+```js
+// <path-to-nextjs-project-folder>/next.config.js
+
+module.exports = {
+  webpack: (config, { dev, isServer }) => {
+    // Replace React with Preact only in client production build
+    if (!dev && !isServer) {
+      Object.assign(config.resolve.alias, {
+        react: 'preact/compat',
+        'react-dom/test-utils': 'preact/test-utils',
+        'react-dom': 'preact/compat',
+      });
+    }
+
+    return config;
+  },
+
+  // [...more configuration here if necessary ...]
+};
+```
+
+Am I happy with it? Of course! But I'm still gonna look for more performance gains on this little project.
+
+See you in the next article!
+
+[blog post]: https://darrenwhite.dev/blog/nextjs-replace-react-with-preact
+[Lee Robinson]: https://leerob.io
