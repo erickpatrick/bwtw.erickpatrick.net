@@ -1,8 +1,5 @@
 export type FaunaFetcher = {
-  name: string;
-  email: string;
-  website: string;
-  message: string;
+  [x: string]: any;
 };
 export default function fetcher(
   action: string,
